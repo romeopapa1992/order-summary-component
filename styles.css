@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    max-width: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 55px;
+    margin-top: 30px;
+}
+
+.main-card img {
+    display: block;
+    width: 100%;
+}
+
+.order-summary {
+    background-color: #fff;
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.order-summary p {
+    text-align: center;
+    width: min(90%);
+    padding: 10px;
+    margin: 0 auto;
+    color: #83889E;
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F9FE;
+    padding: 20px 20px;
+    border-radius: 18px;
+    margin-top: 5px;
+}
+
+.annual-plan p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan a {
+    color: hsl(245, 75%, 52%);
+    font-size: 1rem;
+    text-decoration: underline;;
+}
+
+.annual-plan img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.left-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+}
+
+.buttons {
+display: flex;
+width: 100%;
+padding: 20px 0px 20px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.payment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: hsl(245, 75%, 52%);
+  box-shadow: 0px 8px 8px 0px hsl(224, 23%, 55%);
+  border-radius: .8em;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  }
+  
+.payment-button:hover {
+    background-color: hsl(245, 55%, 52%);
+  }
+  
+.cancel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  }
+  
+.cancel-button:hover {
+    color: hsl(223, 47%, 23%);
+  }
+
+a {
+    color: hsl(240, 15%, 51%);
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    margin: 0px;
+}
+
+.attribution { 
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px; 
+    text-align: center; 
+    bottom: 0;
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    margin: 5px 0; 
+    margin-top: 0;
+    font-size: 11px;
+}
+
+
+@media (max-width: 375px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+        padding: 50px;
+    }
+
+    .order-summary {
+        padding:  30px 20px;
+        font-size: .75rem;
+
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: .9rem;
+    }
+
+    .annual-plan {
+        margin-top: 0px;
+        max-width: 200px;
+        font-size: .75rem;
+    }
+    .annual-plan a {
+        font-size: .8rem;
+    }
+
+    .left-section{
+        margin-right: 20px;
+    }
+    
+    .payment-button {
+        font-size: .9rem;
+
+    }
+
+    .cancel-button {
+        font-size: .9;
+    }
+
+    .attribution {
+        display: block;
+    }
+   
+}
